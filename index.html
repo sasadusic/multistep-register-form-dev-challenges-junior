@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Multi-step Register Form | devChallenges.io</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+  </head>
+  <body>
+    <main class="main">
+      <div class="cont" id="cont-1">
+        <div class="card card-1">
+          <h1 class="header">Register</h1>
+          <form action="" class="form" id="form-1">
+            <div class="input-cont">
+              <label for="name" class="label">Name</label>
+              <input class="input name" id="name" type="text" name="name" placeholder="Enter your name" required >
+            </div>
+            <div class="input-cont">
+            <label for="email" class="label">Email</label>
+            <input class="input email" id="email" type="email" name="email" placeholder="Example@gmail.com" required >
+              
+            </div>
+            <div class="btn-cont" ><button class="btn" id="btn-1" data-form="2">Continue</button></div>
+          </form>
+        </div>
+        <div class="step-cont">
+          <p class="step-phar">Step 1 of 3</p>
+          <div class="page-cont">
+            <div class="circle full-circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cont" id="cont-2">
+        <div class="card card-2">
+          <h1 class="header">Which topics you are interested in?</h1>
+          <form action="" class="form" id="form-2">
+            <div class="check-outer-cont">
+              <div class="check-cont check-cont-1">
+                <input type="checkbox" class="checkbox" id="softwate" value="Software Development">
+                Software Development</div>
+                <div class="check-cont">
+                  <input type="checkbox" class="checkbox" id="user" value="User Experience">
+                  User Experience</div>
+              
+                  <div class="check-cont">
+                    <input type="checkbox" class="checkbox" id="graphic" value="Graphic Design">
+                    Graphic Design</div>
+            </div>
+                  <div class="btn-cont"><button class="btn" id="btn-2" data-form="3">Continue</button></div>
+          </form>
+        </div>
+        <div class="step-cont">
+          <p class="step-phar">Step 2 of 3</p>
+          <div class="page-cont">
+            <div class="circle"></div>
+            <div class="circle full-circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cont" id="cont-3">
+        <div class="card card-3">
+          <h1 class="header">Summary</h1>
+          <div class="info-cont"><span class="mute">Name:</span> <p class="info-p name-p" id="name-p">Emily Johnson</p></div>
+          <div class="info-cont"><span class="mute">Email:</span> <p class="info-p email-p" id="email-p">emily@emilyjohnsonstl.com</p></div>
+          <p class="phar info-phar mute topics">Topics:</p>
+          <ul class="topic-cont" id="topics-cont">
+
+            <li class="phar info-phar li-phar">User Experience</>
+            <li class="phar info-phar li-phar">Graphic Design</>
+          </ul>
+          <div class="btn-cont"><button class="btn btn-3" id="btn-3" data-form="1">Continue</button></div>
+        </div>
+        <div class="step-cont">
+          <p class="step-phar">Step 3 of 3</p>
+          <div class="page-cont">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle full-circle"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="https://sasadusic.github.io/fcc-front-end-portfolio" target="_blank">Saša Dušić</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
